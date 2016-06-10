@@ -308,7 +308,7 @@
                     return $ctrl.isOpen($scope.section);
                 }, function(open) {
                     $timeout(function() {
-                        if (!$mdMedia('gt-sm') && !$mdSidenav('left').isOpen() && open) {
+                        if (!$mdSidenav('left').isLockedOpen() && !$mdSidenav('left').isOpen() && open) {
                             return;
                         }
 
