@@ -416,6 +416,8 @@
             '   class="md-raised md-primary"' +
             '   ui-sref="{{section.state}}"\n' +
             '   ng-click="focusSection(section)">\n' +
+            '   <md-icon ng-if="section.svgicon" md-svg-src="{{section.svgicon.src}}"></md-icon> \n' +
+            '   <md-icon ng-if="section.mdicon">{{section.mdicon}}</md-icon> \n' +
             '   <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span>{{section.name}}\n' +
             '   <span class="md-visually-hidden"\n' +
             '       ng-if="isSelected(section.state)">\n' +
@@ -430,6 +432,8 @@
             '   aria-controls="docs-menu-{{section.name}}"\n' +
             '   aria-expanded="{{isOpen(section)}}">\n' +
             '   <div flex layout="row">\n' +
+            '       <md-icon ng-if="section.svgicon" md-svg-src="{{section.svgicon.src}}"></md-icon> \n' +
+            '       <md-icon ng-if="section.mdicon">{{section.mdicon}}</md-icon> \n' +
             '       <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span>{{section.name}}\n' +
             '       <span flex></span>\n' +
             '       <span aria-hidden="true" class="md-toggle-icon"\n' +
@@ -453,6 +457,8 @@
             '<ul class="menu">' +
             '    <li ss-style-color="{\'border-bottom-color\': \'primary.600\'}" ng-repeat="section in menu.sections" ng-if="!section.hidden">' +
             '        <h2 ss-style-color="{\'color\': \'primary.A100\'}" class="menu-heading md-subhead" ng-if="section.type === \'heading\'">' +
+            '            <md-icon ng-if="section.svgicon" md-svg-src="{{section.svgicon.src}}"></md-icon> \n' +
+            '            <md-icon ng-if="section.mdicon">{{section.mdicon}}</md-icon> \n' +
             '            <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span>{{section.name}}\n' +
             '        </h2>' +
             '        <menu-link section="section" ng-if="section.type === \'link\'"></menu-link>' +
