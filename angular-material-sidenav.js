@@ -22,8 +22,8 @@
             _sections = value ? value : [];
         };
 
-        this.initWithTheme = function (value) {
-            _theme = value.theme();
+        this.initWithTheme = function (value, name) {
+            _theme = value.theme(name);
             _palettes = value._PALETTES;
         };
 
@@ -426,6 +426,7 @@
 
         $templateCache.put('views/ss/menu-toggle.tmpl.html',
             '<md-button class="md-raised md-primary md-button-toggle"\n' +
+            '   ss-style-color="{\'background-color\': \'primary.default\'}"' +
             '   ng-click="toggle(section)"\n' +
             '   aria-controls="docs-menu-{{section.name}}"\n' +
             '   aria-expanded="{{isOpen(section)}}">\n' +
