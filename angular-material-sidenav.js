@@ -452,7 +452,7 @@
 
         $templateCache.put('views/ss/menu-sidenav.tmpl.html',
             '<ul class="menu">' +
-            '    <li ss-style-color="{\'border-bottom-color\': \'primary.600\'}" ng-repeat="section in menu.sections" ng-if="!section.hidden">' +
+            '    <li ng-repeat="section in menu.sections" ng-if="!section.hidden">' +
             '        <h2 ss-style-color="{\'color\': \'primary.A100\'}" class="menu-heading md-subhead" ng-if="section.type === \'heading\'">' +
             '            <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span>{{section.name}}\n' +
             '        </h2>' +
