@@ -418,7 +418,7 @@
             '   ng-click="focusSection(section)">\n' +
             '   <md-icon ng-if="section.svgicon" md-svg-src="{{section.svgicon.src}}"></md-icon> \n' +
             '   <md-icon ng-if="section.mdicon">{{section.mdicon}}</md-icon> \n' +
-            '   <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span>{{section.name}}\n' +
+            '   <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span><span class="name">{{section.name}}</span>\n' +
             '   <span class="md-visually-hidden"\n' +
             '       ng-if="isSelected(section.state)">\n' +
             '       current page\n' +
@@ -435,7 +435,7 @@
             '   <div flex layout="row">\n' +
             '       <md-icon ng-if="section.svgicon" md-svg-src="{{section.svgicon.src}}"></md-icon> \n' +
             '       <md-icon ng-if="section.mdicon">{{section.mdicon}}</md-icon> \n' +
-            '       <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span>{{section.name}}\n' +
+            '       <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span><span class="name">{{section.name}}</span>\n' +
             '       <span flex></span>\n' +
             '       <span aria-hidden="true" class="md-toggle-icon"\n' +
             '           ng-class="{\'toggled\' : isOpen(section)}">\n' +
@@ -460,7 +460,7 @@
             '        <h2 ss-style-color="{\'color\': \'primary.A100\'}" class="menu-heading md-subhead" ng-if="section.type === \'heading\'">' +
             '            <md-icon ng-if="section.svgicon" md-svg-src="{{section.svgicon.src}}"></md-icon> \n' +
             '            <md-icon ng-if="section.mdicon">{{section.mdicon}}</md-icon> \n' +
-            '            <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span>{{section.name}}\n' +
+            '            <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span><span class="name">{{section.name}}</span>\n' +
             '        </h2>' +
             '        <menu-link section="section" ng-if="section.type === \'link\'"></menu-link>' +
             '        <menu-toggle section="section" ng-if="section.type === \'toggle\'"></menu-toggle>' +
