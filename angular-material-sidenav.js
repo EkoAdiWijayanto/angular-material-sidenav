@@ -414,7 +414,7 @@
             '<md-button\n' +
             '   ss-style-color="{\'background-color\': (isSelected(section.state) || $state.includes(section.state)) ? \'primary.800\': \'primary.default\'}"' +
             '   class="md-raised md-primary"' +
-            '   ui-sref="{{section.state}}" ui-sref-opts="{reload:true}" \n' +
+            '   ui-sref="{{section.state}}"\n' +
             '   ng-click="focusSection(section)">\n' +
             '   <md-icon ng-if="section.svgicon" md-svg-src="{{section.svgicon.src}}"></md-icon> \n' +
             '   <md-icon ng-if="section.mdicon">{{section.mdicon}}</md-icon> \n' +
